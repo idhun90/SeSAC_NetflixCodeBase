@@ -19,6 +19,7 @@
 		14A6510928B092700098CAC4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510828B092700098CAC4 /* BaseView.swift */; };
 		14A6510B28B0932C0098CAC4 /* NetfliexMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510A28B0932C0098CAC4 /* NetfliexMainView.swift */; };
 		14A6510D28B0A0F80098CAC4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510C28B0A0F80098CAC4 /* CustomButton.swift */; };
+		14A6510F28B0AE660098CAC4 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510E28B0AE660098CAC4 /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		14A6510828B092700098CAC4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		14A6510A28B0932C0098CAC4 /* NetfliexMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetfliexMainView.swift; sourceTree = "<group>"; };
 		14A6510C28B0A0F80098CAC4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		14A6510E28B0AE660098CAC4 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				14A6510C28B0A0F80098CAC4 /* CustomButton.swift */,
+				14A6510E28B0AE660098CAC4 /* CustomImageView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A650ED28B089460098CAC4 /* ViewController.swift in Sources */,
+				14A6510F28B0AE660098CAC4 /* CustomImageView.swift in Sources */,
 				14A6510528B090800098CAC4 /* BaseViewController.swift in Sources */,
 				14A6510728B0923C0098CAC4 /* NetflixMainViewController.swift in Sources */,
 				14A6510928B092700098CAC4 /* BaseView.swift in Sources */,
