@@ -13,6 +13,12 @@
 		14A650F028B089460098CAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A650EE28B089460098CAC4 /* Main.storyboard */; };
 		14A650F228B089470098CAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A650F128B089470098CAC4 /* Assets.xcassets */; };
 		14A650F528B089470098CAC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A650F328B089470098CAC4 /* LaunchScreen.storyboard */; };
+		14A6510328B0905F0098CAC4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 14A6510228B0905F0098CAC4 /* SnapKit */; };
+		14A6510528B090800098CAC4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510428B090800098CAC4 /* BaseViewController.swift */; };
+		14A6510728B0923C0098CAC4 /* NetflixMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510628B0923C0098CAC4 /* NetflixMainViewController.swift */; };
+		14A6510928B092700098CAC4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510828B092700098CAC4 /* BaseView.swift */; };
+		14A6510B28B0932C0098CAC4 /* NetfliexMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510A28B0932C0098CAC4 /* NetfliexMainView.swift */; };
+		14A6510D28B0A0F80098CAC4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6510C28B0A0F80098CAC4 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		14A650F128B089470098CAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14A650F428B089470098CAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14A650F628B089470098CAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A6510428B090800098CAC4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		14A6510628B0923C0098CAC4 /* NetflixMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMainViewController.swift; sourceTree = "<group>"; };
+		14A6510828B092700098CAC4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		14A6510A28B0932C0098CAC4 /* NetfliexMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetfliexMainView.swift; sourceTree = "<group>"; };
+		14A6510C28B0A0F80098CAC4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A6510328B0905F0098CAC4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				14A6510028B08F9D0098CAC4 /* Base */,
-				14A650FF28B08F950098CAC4 /* CustomView */,
+				14A650FF28B08F950098CAC4 /* Custom */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -82,6 +94,8 @@
 		14A650FD28B08F730098CAC4 /* NetflixMain */ = {
 			isa = PBXGroup;
 			children = (
+				14A6510628B0923C0098CAC4 /* NetflixMainViewController.swift */,
+				14A6510A28B0932C0098CAC4 /* NetfliexMainView.swift */,
 			);
 			path = NetflixMain;
 			sourceTree = "<group>";
@@ -93,16 +107,19 @@
 			path = NetflixLogin;
 			sourceTree = "<group>";
 		};
-		14A650FF28B08F950098CAC4 /* CustomView */ = {
+		14A650FF28B08F950098CAC4 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				14A6510C28B0A0F80098CAC4 /* CustomButton.swift */,
 			);
-			path = CustomView;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		14A6510028B08F9D0098CAC4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				14A6510428B090800098CAC4 /* BaseViewController.swift */,
+				14A6510828B092700098CAC4 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -123,6 +140,9 @@
 			dependencies = (
 			);
 			name = NetflixCodeBase;
+			packageProductDependencies = (
+				14A6510228B0905F0098CAC4 /* SnapKit */,
+			);
 			productName = NetflixCodeBase;
 			productReference = 14A650E528B089460098CAC4 /* NetflixCodeBase.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 14A650DC28B089460098CAC4;
+			packageReferences = (
+				14A6510128B0905F0098CAC4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 14A650E628B089460098CAC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,7 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A650ED28B089460098CAC4 /* ViewController.swift in Sources */,
+				14A6510528B090800098CAC4 /* BaseViewController.swift in Sources */,
+				14A6510728B0923C0098CAC4 /* NetflixMainViewController.swift in Sources */,
+				14A6510928B092700098CAC4 /* BaseView.swift in Sources */,
+				14A6510D28B0A0F80098CAC4 /* CustomButton.swift in Sources */,
 				14A650E928B089460098CAC4 /* AppDelegate.swift in Sources */,
+				14A6510B28B0932C0098CAC4 /* NetfliexMainView.swift in Sources */,
 				14A650EB28B089460098CAC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14A6510128B0905F0098CAC4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14A6510228B0905F0098CAC4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14A6510128B0905F0098CAC4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14A650DD28B089460098CAC4 /* Project object */;
 }
